@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ﻿Ciurla Adolf
-=======
-﻿Ciurla Bartosz
->>>>>>> 0e45a45e4f974b3fc2acb8fd71626cf1584f5cb2
 Zawiślan Waldemar
 <<<<<<< HEAD
 Guz Dominik
@@ -13,5 +9,7 @@ Szargot	Agata
 >>>>>>> 28d4b7aebc280f6c48def0935226941d5f232386
 Kamiński Marian
 Ostrowska Małgorzata
+Maga Kazik
+Ostrowska Maria
 Maga Paweł
 Przemyk Janusz
