@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+﻿Ciurla Adolf
+=======
 ﻿Ciurla Bartosz
+>>>>>>> 0e45a45e4f974b3fc2acb8fd71626cf1584f5cb2
 Zawiślan Waldemar
 Guz Dominik
 Szargot	Agata
