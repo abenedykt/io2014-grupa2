@@ -3,6 +3,11 @@ Zawiślan Waldemar
 Guz Józef
 Szargot	Agata
 Kamiński Marian
+<<<<<<< HEAD
+Ostrowska Małgorzata
+Maga Kazik
+=======
 Ostrowska Maria
 Maga Paweł
+>>>>>>> 760a4844b4f655385aaf2cd7ecf687366a4693fb
 Przemyk Janusz
