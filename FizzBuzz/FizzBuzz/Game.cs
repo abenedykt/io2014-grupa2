@@ -7,9 +7,33 @@ namespace FizzBuzz
 {
     public class Game
     {
-        public int play(int num)
+        public string play(int num)
         {
-            return num;
+            
+            if (DividesByThree(num) && DividesByFive(num))
+            {
+                return "Fizz Buzz";
+            }
+            else if (DividesByThree(num))
+            {
+                return "Fizz";
+            }
+            else if (DividesByFive(num))
+            {
+                return "Buzz";
+            }
+
+            return "";
+        }
+
+        public bool DividesByThree(int num)
+        {
+            return num % 3 == 0 ? true : false;
+        }
+
+        public bool DividesByFive(int num) 
+        {
+            return num % 5 == 0 ? true : false;
         }
 
     }
