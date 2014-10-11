@@ -46,7 +46,7 @@ namespace FizzBuzz
         }
 
         [Fact]
-        public void Play_ReturnFizzBuzzForNumberDividedBy3And5()
+        public void Play_ReturnFizzBuzzForNumberDividedBy3And5_FizzBuzz()
         {
             var game = new Game();
 
