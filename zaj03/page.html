@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Zaj03</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="page.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+</head>
+
+<body>
+<div ng-app="">
+ 		Podaj liczbę: <input type="text" class="input-small" 
+    ng-model="input">
+	<br/>
+     <span ng-if="input === '15'">
+       FizzBuzz
+     </span>
+     <span ng-if="input === '3'">
+       Fizz
+     </span>
+     <span ng-if="input === '5'">
+       Buzz
+     </span>
+ </h1>
+</div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.0/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+</body>
+
+</html>
