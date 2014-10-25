@@ -1,7 +1,8 @@
 ﻿Ciurla Adolf
 Zawiślan Waldemar
 <<<<<<< HEAD
-Guz Dominik
+Gfsaf:x
+uz Dominik
 Szargot Waldemar	
 =======
 Guz Leszek
