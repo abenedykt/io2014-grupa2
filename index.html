@@ -1,0 +1,42 @@
+<html>
+<body>
+
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+            <input type="text" class="form-control input-md"  style= "width: 300px" placeholder=""/>
+            
+            <button type="button" class="btn btn-success btn-lg">Default</button>
+            </div> 
+           
+	</div>
+</div>
+    
+    <div ng-controller="MyCtrl">
+  Hello, {{name}}!
+</div>
+
+<script src="https://code.angularjs.org/angular-1.0.1.js"/>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"/>
+<script>
+var myApp = angular.module('myApp',[]);
+
+//myApp.directive('myDirective', function() {});
+//myApp.factory('myService', function() {});
+
+function MyCtrl($scope) {
+    $scope.name = 'Superslkdfjsldkfjhero';
+}
+</script>
+</body>
+</html>
+
+
+/* Optional theme */
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
+
+body {
+    margin: 50px;
+}
+
+
