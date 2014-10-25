@@ -1,0 +1,34 @@
+<html>
+<body ng-app="myApp">
+<div ng-controller="MyCtrl">
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+            <br />
+            
+            <form>
+                Podaj liczbê: <input type="text" name="liczba" ng-model="liczba" />
+            </form>
+			 <button type="button" class="btn btn-default">Start</button>
+		</div>
+	</div>
+</div>
+
+
+Wynik: {{liczba}}!
+</div>
+</body>
+<script>
+var myApp = angular.module('myApp',[]);
+
+//myApp.directive('myDirective', function() {});
+//myApp.factory('myService', function() {});
+
+function MyCtrl($scope) {
+
+    $scope.liczba = 'Superhetertero';
+    
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js" />
+</html>
