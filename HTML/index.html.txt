@@ -1,0 +1,46 @@
+HTML BODY
+<html>
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			Podaj liczbê: <input type="text" class="form-control input-md" style="width: 510px" placeholder=""> 
+            <br>
+            <button type="button" class="btn btn-default">Oblicz </button>
+            </div>
+	</div>
+</div>
+        <br>
+       <div ng-controller="MyCtrl">
+  Hello, {{name}}!
+</div>
+<script src="https://code.angularjs.org/angular-1.0.1.js"/>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"/>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+
+JavaScript
+<script>
+var myApp = angular.module('myApp',[]);
+
+//myApp.directive('myDirective', function() {});
+//myApp.factory('myService', function() {});
+
+function MyCtrl($scope) {
+    $scope.name = 'Superhero';
+}
+</script>
+
+</body>
+</html>
+
+CSS
+/* Latest compiled and minified CSS included as External Resource*/
+
+/* Optional theme */
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
+
+body {
+    margin: 10px;
+}
+
+
