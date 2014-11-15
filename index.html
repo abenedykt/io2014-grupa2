@@ -1,4 +1,9 @@
+<!DOCTYPE html>
 <html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js" ></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
 <body ng-app="myApp">
 <div ng-controller="MyCtrl">
 <div class="container">
@@ -17,7 +22,7 @@
 
 Wynik: {{liczba}}!
 </div>
-</body>
+
 <script>
 var myApp = angular.module('myApp',[]);
 
@@ -30,5 +35,6 @@ function MyCtrl($scope) {
     
 }
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js" />
+
+</body>
 </html>
