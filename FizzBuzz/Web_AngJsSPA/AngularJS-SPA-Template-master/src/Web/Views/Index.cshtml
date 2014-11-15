@@ -1,0 +1,36 @@
+﻿@{
+    PageData["title"] = "FizzBuzz";
+}
+
+    <div ng-app="" class="row clearfix">
+
+    <div class="col-md-12 column" ng-init="counter">
+        <h3>
+            FizzBuzz
+        </h3>
+        <div class="page-header">
+
+            <div class="input-group">
+                <input type="text" id="counterInput" ng-model="count" class="form-control" min="1" required>
+                <span class="input-group-addon">
+                    {{count}}
+                    <button ng-click="" type="button" class="btn btn-default btn-block">Play</button>
+                </span>
+            </div>
+
+        </div>
+        <button ng-click="" type="button" class="btn btn-default btn-block">Fizz</button>
+        <button ng-click="" type="button" class="btn btn-default btn-block">Buzz</button>
+        <button ng-click="" type="button" class="btn btn-default btn-block">FizzBuzz</button>
+        <br /><br />
+
+        <h2 ng-bind="GameStatus">
+            FAIL  :  {{counter}}
+        </h2>
+
+        <p>
+            <a class="btn" href="#">View details »</a>
+        </p>
+
+    </div>
+</div>
