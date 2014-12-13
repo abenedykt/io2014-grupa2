@@ -19,8 +19,5 @@ namespace Zamowienia
 
         public double ObliczWartoscZamowienia();
 
-
-
-
     }
 }

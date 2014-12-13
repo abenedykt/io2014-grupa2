@@ -41,11 +41,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adresy\AdresWysylki.cs" />
+    <Compile Include="Adresy\IAdres.cs" />
+    <Compile Include="Klienci\IKlient.cs" />
+    <Compile Include="Klienci\KlientFirma.cs" />
+    <Compile Include="Klienci\KlientOsobaPrywatna.cs" />
+    <Compile Include="Produkty\IProdukt.cs" />
+    <Compile Include="Produkty\Produkt.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rabaty\IRabat.cs" />
+    <Compile Include="Rabaty\RabatCzasowy.cs" />
+    <Compile Include="Rabaty\RabatIlosciowy.cs" />
+    <Compile Include="Rabaty\RabatKwotowy.cs" />
+    <Compile Include="Rabaty\RabatKlienta.cs" />
+    <Compile Include="Zamowienia\Zamowienie.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Waluty\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
