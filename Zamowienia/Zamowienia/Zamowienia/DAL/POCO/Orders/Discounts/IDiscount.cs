@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Zamowienia;
+
 namespace Zamowienia
 {
-    public class KlientOsobaPrywatna :IKlient
+    public interface IDiscount
     {
+        double CalculateDiscountForOrder(Order order);
 
     }
 }

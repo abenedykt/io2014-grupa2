@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zamowienia.Frontend.Console
+namespace Zamowienia.DAL.POCO.Orders.Orders
 {
-    class IConsoleTask
+    class OrderAvailabilityVerifier
     {
     }
 }

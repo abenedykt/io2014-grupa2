@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zamowienia.Adresy
 {
-    public interface IAdres
+    public interface IAdress
     {
 
     }

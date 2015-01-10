@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Zamowienia.Rabaty;
 
 namespace Zamowienia.Rabaty
 {
-    public class RabatCzasowy : IRabat
+    public class QuantityDiscount : IDiscount
     {
-
-        double ObliczRabatDlaZamowienia(Zamowienie order)
+        public double CalculateDiscountForOrder(Order order)
         {
             return 0;
         }
-
     }
 }

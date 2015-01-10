@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Zamowienia.Rabaty
 {
-    public class RabatKwotowy :IRabat
+    public class ValueDiscount : IDiscount
     {
-        double ObliczRabatDlaZamowienia(Zamowienie order)
+        public double CalculateDiscountForOrder(Order order)
         {
             return 0;
         }

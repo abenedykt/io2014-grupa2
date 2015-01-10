@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zamowienia
+namespace Zamowienia.BLS.Services
 {
-    class KlientFirma
+    public class AnalyticsBLS
     {
-
     }
-
 }

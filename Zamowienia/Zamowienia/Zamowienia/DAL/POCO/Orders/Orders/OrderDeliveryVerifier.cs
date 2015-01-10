@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Zamowienia;
-namespace Zamowienia
+
+namespace Zamowienia.DAL.POCO.Orders.Orders
 {
-    public class AdresWysylki 
+    class OrderDeliveryVerifier
     {
     }
 }

@@ -41,27 +41,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adresy\AdresWysylki.cs" />
-    <Compile Include="Adresy\IAdres.cs" />
-    <Compile Include="Klienci\IKlient.cs" />
-    <Compile Include="Klienci\KlientFirma.cs" />
-    <Compile Include="Klienci\KlientOsobaPrywatna.cs" />
-    <Compile Include="Produkty\IProdukt.cs" />
-    <Compile Include="Produkty\Produkt.cs" />
+    <Compile Include="BLS\Services\AnalyticsBLS.cs" />
+    <Compile Include="BLS\Services\IBusinessLogicService.cs" />
+    <Compile Include="BLS\Services\ManagementBLS.cs" />
+    <Compile Include="BLS\Services\OrderingBLS.cs" />
+    <Compile Include="BLS\Services\ProviderBLS.cs" />
+    <Compile Include="DAL\POCO\Access\ISystemProvider.cs" />
+    <Compile Include="DAL\POCO\Access\ShowSystemProvider.cs" />
+    <Compile Include="DAL\POCO\Orders\Adresses\DeliveryAddress.cs" />
+    <Compile Include="DAL\POCO\Orders\Adresses\IAdress.cs" />
+    <Compile Include="DAL\POCO\Orders\Orders\IOrderVerifier.cs" />
+    <Compile Include="DAL\POCO\Orders\Orders\OrderAvailabilityVerifier.cs" />
+    <Compile Include="DAL\POCO\Orders\Orders\OrderDeliveryVerifier.cs" />
+    <Compile Include="DAL\POCO\Orders\Status\OrderStatus.cs" />
+    <Compile Include="DAL\POCO\Transaction\FileSystemTaskLogging.cs" />
+    <Compile Include="DAL\POCO\Transaction\ITaskLogging.cs" />
+    <Compile Include="Frontend\Console\Tasks\ConsoleTaskManager.cs" />
+    <Compile Include="Frontend\Console\Tasks\IConsoleTask.cs" />
+    <Compile Include="DAL\POCO\Orders\Clients\IClient.cs" />
+    <Compile Include="DAL\POCO\Orders\Clients\OrganizationalClient.cs" />
+    <Compile Include="DAL\POCO\Orders\Clients\PrivateClient.cs" />
+    <Compile Include="DAL\POCO\Orders\Products\IProdukt.cs" />
+    <Compile Include="DAL\POCO\Orders\Products\Produkt.cs" />
+    <Compile Include="Frontend\Console\View\IConsoleDataView.cs" />
+    <Compile Include="Frontend\Console\View\IDataView.cs" />
+    <Compile Include="Frontend\Console\View\Menu\ConsoleNavMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rabaty\IRabat.cs" />
-    <Compile Include="Rabaty\RabatCzasowy.cs" />
-    <Compile Include="Rabaty\RabatIlosciowy.cs" />
-    <Compile Include="Rabaty\RabatKwotowy.cs" />
-    <Compile Include="Rabaty\RabatKlienta.cs" />
-    <Compile Include="Zamowienia\Zamowienie.cs" />
+    <Compile Include="DAL\POCO\Orders\Discounts\IDiscount.cs" />
+    <Compile Include="DAL\POCO\Orders\Discounts\TimedDiscount.cs" />
+    <Compile Include="DAL\POCO\Orders\Discounts\QuantityDiscount.cs" />
+    <Compile Include="DAL\POCO\Orders\Discounts\ValueDiscount.cs" />
+    <Compile Include="DAL\POCO\Orders\Discounts\CustomerDiscount.cs" />
+    <Compile Include="DAL\POCO\Orders\Orders\Order.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Waluty\" />
+    <Folder Include="DAL\POCO\Orders\BLD\" />
+    <Folder Include="DAL\Repository\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

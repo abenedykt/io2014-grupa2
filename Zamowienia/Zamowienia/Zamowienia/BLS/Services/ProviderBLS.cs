@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zamowienia.DAL.Transaction
+namespace Zamowienia.BLS.Services
 {
-    class FileSystemTaskLogging
+    public class ProviderBLS
     {
     }
 }

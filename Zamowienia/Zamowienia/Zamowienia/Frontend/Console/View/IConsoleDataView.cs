@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Zamowienia;
 
-namespace Zamowienia
+namespace Zamowienia.Frontend.Console.View
 {
-    public interface IRabat
+    public class IConsoleDataView
     {
-        double ObliczRabatDlaZamowienia(Zamowienie order);
-
     }
 }
