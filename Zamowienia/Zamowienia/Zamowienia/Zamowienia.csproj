@@ -61,8 +61,8 @@
     <Compile Include="DAL\POCO\Orders\Clients\IClient.cs" />
     <Compile Include="DAL\POCO\Orders\Clients\OrganizationalClient.cs" />
     <Compile Include="DAL\POCO\Orders\Clients\PrivateClient.cs" />
-    <Compile Include="DAL\POCO\Orders\Products\IProdukt.cs" />
-    <Compile Include="DAL\POCO\Orders\Products\Produkt.cs" />
+    <Compile Include="DAL\POCO\Orders\Products\IProduct.cs" />
+    <Compile Include="DAL\POCO\Orders\Products\Product.cs" />
     <Compile Include="Frontend\Console\View\IConsoleDataView.cs" />
     <Compile Include="Frontend\Console\View\IDataView.cs" />
     <Compile Include="Frontend\Console\View\Menu\ConsoleNavMenu.cs" />
