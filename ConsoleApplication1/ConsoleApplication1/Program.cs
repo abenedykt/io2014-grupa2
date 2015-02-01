@@ -10,13 +10,28 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            var produkt1 = new Product {Name = "p1", Price = 10, Weight = 5, Height = 1, Width = 1};
+            var koszyk = new ShoppingCart()
+            {
+                Products = new List<Product>
+                {
+                    new Product() {Name = "10", Price = 1000},
+                    new Product() {Name = "20", Price = 1000},
+                    new Product() {Name = "30", Price = 1000},
+                    new Product() {Name = "40", Price = 1000},
+                    new Product() {Name = "50", Price = 1000},
+                }
+            };
 
-            var zamowienie = new Order();
+            koszyk.CalculteBasicPrice();
 
-            zamowienie.AddProduct(produkt1);
+            Console.WriteLine(koszyk.BasicPrice);
+            Console.WriteLine();
 
-            zamowienie.Total();
+            var zamowienie = new Order(koszyk);
+
+            Console.WriteLine(zamowienie.Total());
+
+
         }
     }
 }

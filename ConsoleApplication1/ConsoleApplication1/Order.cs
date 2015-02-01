@@ -6,23 +6,33 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class Order
+    internal class Order
     {
-        public List<Product> Products { get; set; }
+        public ShoppingCart ShoppingCart { get; set; }
+        public List<IDiscount> Discounts { get; set; }
 
-        public Order()
+        public Order(ShoppingCart shoppingCart)
         {
-            Products = new List<Product>();
+            ShoppingCart = shoppingCart;
+            Discounts = new List<IDiscount>();
+
+            Discounts.Add(new Above1000(ShoppingCart));
+            Discounts.Add(new NrOfProdAbove5(ShoppingCart));
         }
 
-        public void AddProduct(Product product)
+        public double Total()
         {
-            Products.Add(product);
-        }
+            double total = ShoppingCart.BasicPrice;
 
-        public double Total(IDiscount discount)
-        {
-            return 0;
+            foreach (var discount in Discounts)
+            {
+                if (discount.Condition() == true)
+                {
+                    total -= discount.DiscountValue;
+                }
+            }
+
+            return total;
         }
     }
 }
