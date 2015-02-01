@@ -1,0 +1,6 @@
+C:\Users\Myszururka xD\Documents\ATH\PIO\io2014-grupa2\dziedziczenie\dziedziczenie\bin\Debug\dziedziczenie.exe.config
+C:\Users\Myszururka xD\Documents\ATH\PIO\io2014-grupa2\dziedziczenie\dziedziczenie\bin\Debug\dziedziczenie.exe
+C:\Users\Myszururka xD\Documents\ATH\PIO\io2014-grupa2\dziedziczenie\dziedziczenie\bin\Debug\dziedziczenie.pdb
+C:\Users\Myszururka xD\Documents\ATH\PIO\io2014-grupa2\dziedziczenie\dziedziczenie\obj\Debug\dziedziczenie.csprojResolveAssemblyReference.cache
+C:\Users\Myszururka xD\Documents\ATH\PIO\io2014-grupa2\dziedziczenie\dziedziczenie\obj\Debug\dziedziczenie.exe
+C:\Users\Myszururka xD\Documents\ATH\PIO\io2014-grupa2\dziedziczenie\dziedziczenie\obj\Debug\dziedziczenie.pdb
