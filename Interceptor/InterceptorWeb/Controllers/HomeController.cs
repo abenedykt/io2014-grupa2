@@ -14,6 +14,8 @@ namespace InterceptorWeb.Controllers
         // GET: /Index/
 
 
+
+
         public ActionResult Index()
         {
             HomeViewModel model = new HomeViewModel();

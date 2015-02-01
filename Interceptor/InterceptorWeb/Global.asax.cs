@@ -32,11 +32,16 @@ namespace InterceptorWeb
             // ...or you can register individual controlllers manually.
             builder.RegisterType<HomeController>().InstancePerRequest();
 
+
+
             var container = builder.Build();
+
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
 
             builder.RegisterModelBinders(Assembly.GetExecutingAssembly());
             builder.RegisterModelBinderProvider();
+
+            builder.RegisterModule<AutofacWebTypesModule>();
 
 
         }
