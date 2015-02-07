@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Above1000.cs" />
+    <Compile Include="buy3oneFree.cs" />
     <Compile Include="IDiscount.cs" />
     <Compile Include="NrOfProdAbove5.cs" />
     <Compile Include="Order.cs" />

@@ -18,6 +18,7 @@ namespace ConsoleApplication1
 
             Discounts.Add(new Above1000(ShoppingCart));
             Discounts.Add(new NrOfProdAbove5(ShoppingCart));
+            Discounts.Add(new buy3oneFree(ShoppingCart));
         }
 
         public double Total()
