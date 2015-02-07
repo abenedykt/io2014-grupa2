@@ -11,6 +11,7 @@ namespace DiscountSystem
 
         public IList<Discount> Discounts { get; private set; }
         public IList<Item> Items { get; private set; }
+        public decimal TotalPrice { get; private set; }
 
         public Order()
         {
@@ -24,7 +25,7 @@ namespace DiscountSystem
         {
             if (!CanAddDiscount(discount))
             {
-                throw new Exception("Nie można dodać rabatu");
+                throw new Exception("Nie można dodać rabatu!");
             }
             Discounts.Add(discount);               
         }
@@ -46,7 +47,6 @@ namespace DiscountSystem
 
             Func<bool> isCanBeUsedWithOtherDiscountsRuleValid = () => discount.CanBeUsedWithOtherDiscounts || 
                 !Discounts.Any();
-
 
             return CanAddDiscounts &&
                 isCanBeUsedMultipleTimesRuleValid() && 

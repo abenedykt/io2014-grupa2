@@ -64,7 +64,7 @@ namespace DiscountSystem.Tests
         public void When_discount_can_not_be_used_with_other_discounts_and_discount_are_added_it_should_throw_exception()
         {
             var order = new Order();
-            var discount = new TestDiscount()
+            var discount = new TestDiscount
             {
                 CanBeUsedWithOtherDiscounts = false
             };
@@ -75,29 +75,45 @@ namespace DiscountSystem.Tests
         }
 
         [Fact]
-        public void When_discount_allows_for_multiple_same_discounts_and_can_be_used_with_other_discounts_it_should_not_throw_exception()
+        public void When_discount_allows_for_multiple_adding_and_can_be_used_with_other_discounts_it_should_not_throw_exception()
         {
             var order = new Order();
-            var discount = new TestDiscount()
+            var discount = new TestDiscount("First discount")
             {
                 CanBeUsedMultipleTimes = true,
                 CanBeUsedWithOtherDiscounts = true
             };
+            var secondDiscount = new TestDiscount("SecondDiscount")
+            {
+                CanBeUsedMultipleTimes = true,
+                CanBeUsedWithOtherDiscounts = true
+            }; 
 
             order.AddDiscount(discount);
 
-            Assert.DoesNotThrow(() => { order.AddDiscount(discount); });
+            Assert.DoesNotThrow(() => { order.AddDiscount(secondDiscount); });
+        }
+
+        [Fact]
+        public void CanAddItemToOrder()
+        {
+            var order = new Order();
+            var item1 = new Item();
+
+            order.AddItem(item1);
+
+            Assert.Equal(1, order.Items.Count());
         }
 
         private class TestDiscount : Discount
         {
-            public TestDiscount()
-                : base("TestDiscount")
+            public TestDiscount(string name = "TestDiscount")
+                : base(name)
             {
 
             }
 
-            public override Order ApplyDiscount()
+            public override void ApplyDiscount()
             {
                 throw new NotImplementedException();
             }

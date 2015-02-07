@@ -13,12 +13,21 @@ namespace DiscountSystem
         public PercentageDiscount(string name, decimal discountPercentage)
             :base(name)
         {
+            if (discountPercentage < 0 || discountPercentage > 100)
+            {
+                throw new ArgumentException("Invalid discount value!");
+            }
+
             DiscountPercentage = discountPercentage;
         }
 
-        public override Order ApplyDiscount()
+        public override void ApplyDiscount()
         {
-            throw new NotImplementedException();
+            Order.Items.ToList().ForEach(n =>
+            {
+                n.Price = n.Price * DiscountPercentage;
+                n.Discounts.Add(this);
+            });
         }
     }
 }

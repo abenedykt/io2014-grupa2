@@ -8,11 +8,11 @@
 
         public Order Order { get; set; }
 
-        public Discount(string name)
+        protected Discount(string name)
         {
             Name = name;
         }
 
-        public abstract Order ApplyDiscount();
+        public abstract void ApplyDiscount();
     }
 }
