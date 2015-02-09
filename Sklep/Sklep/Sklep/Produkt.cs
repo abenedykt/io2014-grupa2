@@ -7,16 +7,11 @@ namespace Sklep
 {
     public class Produkt
     {
-        
-        public Produkt ()
-	{
-        List<string> produkty = new List<string>();
-        produkty.Add("Komputer");
-        produkty.Add("Myszka");
-        produkty.Add("Klawiatura");
-        produkty.Add("Zasilacz";
-	}
-
-
+        public int Id { get; set; }
+        public string Nazwa { get; set; }
+        public string Kategoria { get; set; }
+        public double Cena { get; set; }
     }
+
+
 }

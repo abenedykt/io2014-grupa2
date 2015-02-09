@@ -8,5 +8,8 @@ namespace Sklep
 {
     class Dostawa
     {
+        public int Id { get; set; }
+        public string Typ { get; set; }
+        public double CenaDostawy { get; set; }
     }
 }

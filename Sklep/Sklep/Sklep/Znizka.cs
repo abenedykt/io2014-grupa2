@@ -6,7 +6,12 @@ using System.Text;
 namespace Sklep
 {
     // rabat zależy od zamówienia
-    class Znizka
-    {
+    public interface IZnizka
+    {   
+        public double Wielkosc { get; set; }
+        public string NazwaPromocji { get; set; }
+        bool CzyPasuje(Produkt item);
+        double ObliczZnizke(Produkt item);
     }
+
 }
