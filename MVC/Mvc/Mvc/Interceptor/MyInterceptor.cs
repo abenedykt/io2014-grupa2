@@ -6,6 +6,7 @@ using Autofac;
 using Castle.DynamicProxy;
 using System.IO;
 using Autofac.Extras.DynamicProxy2;
+using Autofac.Builder;
 
 namespace Mvc.Interceptor
 {
