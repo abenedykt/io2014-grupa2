@@ -41,11 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLS\Services\AnalyticsBLS.cs" />
-    <Compile Include="BLS\Services\IBusinessLogicService.cs" />
-    <Compile Include="BLS\Services\ManagementBLS.cs" />
-    <Compile Include="BLS\Services\OrderingBLS.cs" />
-    <Compile Include="BLS\Services\ProviderBLS.cs" />
+    <Compile Include="BLS\Services\Analytics\AnalyticsService.cs" />
+    <Compile Include="BLS\Services\Management\DiscountManagementService.cs" />
+    <Compile Include="BLS\Services\Management\ManagementService.cs" />
+    <Compile Include="BLS\Services\Ordering\DiscountManager.cs" />
+    <Compile Include="BLS\Services\Ordering\IDiscountManager.cs" />
+    <Compile Include="BLS\Services\Ordering\IOrderingService.cs" />
+    <Compile Include="BLS\Services\Ordering\OrderingService.cs" />
     <Compile Include="DAL\POCO\Access\ISystemProvider.cs" />
     <Compile Include="DAL\POCO\Access\ShowSystemProvider.cs" />
     <Compile Include="DAL\POCO\Orders\Adresses\DeliveryAddress.cs" />
@@ -53,7 +55,9 @@
     <Compile Include="DAL\POCO\Orders\Orders\IOrderVerifier.cs" />
     <Compile Include="DAL\POCO\Orders\Orders\OrderAvailabilityVerifier.cs" />
     <Compile Include="DAL\POCO\Orders\Orders\OrderDeliveryVerifier.cs" />
+    <Compile Include="DAL\POCO\Orders\Status\DeliveryStatus.cs" />
     <Compile Include="DAL\POCO\Orders\Status\OrderStatus.cs" />
+    <Compile Include="DAL\POCO\Orders\Status\ProcessingStatus.cs" />
     <Compile Include="DAL\POCO\Transaction\FileSystemTaskLogging.cs" />
     <Compile Include="DAL\POCO\Transaction\ITaskLogging.cs" />
     <Compile Include="Frontend\Console\Tasks\ConsoleTaskManager.cs" />
@@ -79,7 +83,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DAL\POCO\Orders\BLD\" />
     <Folder Include="DAL\Repository\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

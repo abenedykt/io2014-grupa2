@@ -30,9 +30,12 @@ namespace InterceptorWeb
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
 
             // ...or you can register individual controlllers manually.
-            builder.RegisterType<HomeController>().InstancePerRequest();
+           // builder.RegisterType<HomeController>().InstancePerRequest();
 
 
+            builder.RegisterSource(new ViewRegistrationSource());
+
+            builder.RegisterFilterProvider();
 
             var container = builder.Build();
 

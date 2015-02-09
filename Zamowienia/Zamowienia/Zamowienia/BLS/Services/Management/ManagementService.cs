@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zamowienia.BLS.Services
 {
-    public class ManagementBLS
+    public class ManagementService
     {
     }
 }

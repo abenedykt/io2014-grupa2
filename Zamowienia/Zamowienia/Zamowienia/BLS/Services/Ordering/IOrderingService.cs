@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zamowienia.BLS.Services
+namespace Zamowienia.BLS.Services.Ordering
 {
-    public class ProviderBLS
+    public interface IOrderingService
     {
     }
 }

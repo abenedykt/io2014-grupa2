@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace InterceptorWeb.Interceptors
 {
-    public class RequestExecTimeInterceptor : IRequestInterceptor
+    public class RequestExecTimeInterceptor
     {
 
         private IContainer container {get; set; }

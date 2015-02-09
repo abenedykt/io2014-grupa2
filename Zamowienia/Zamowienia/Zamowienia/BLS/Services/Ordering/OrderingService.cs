@@ -7,17 +7,14 @@ using Zamowienia.DAL.POCO.Orders.Status;
 
 namespace Zamowienia.BLS.Services
 {
-    public class OrderingBLS
+    public class OrderingService
     {
 
         public OrderStatus SendOrder(Order order)
         {
             order.CalculateTotalOrderValue();
-
             return new OrderStatus();
         }
-
-
 
     }
 }

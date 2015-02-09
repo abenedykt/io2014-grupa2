@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Zamowienia.DAL.POCO.Orders.Status
 {
-    public class OrderStatus
+    public class DeliveryStatus
     {
-        public ProcessingStatus ProcesStatus { get; set; }
+        public bool Sent { get; set; }
 
-        public DeliveryStatus DeliveryStatus { get; set; }
+        public bool Delivered { get; set; }
 
+        
     }
-
-
 }

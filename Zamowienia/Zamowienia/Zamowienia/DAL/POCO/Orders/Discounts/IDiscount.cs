@@ -9,6 +9,9 @@ namespace Zamowienia
 {
     public interface IDiscount
     {
+
+        int Priority { get; set; }
+
         double CalculateDiscountForOrder(Order order);
 
     }
